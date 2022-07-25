@@ -63,3 +63,7 @@ kaydetmek ve çıkmak için tuş kombinasyonları vardır. (:q = Çıkış | :wq
 chmod : komutu dosyaların yetkilerini ayarlamaya yarar.
 * +x : Dosyayı çalıştırılabilme iznini verir.
 * -x : Dosyadan çalıştırılabilme iznini kaldırır. NOT: chmod'un nasıl kullanıldığı ile ilgili daha fazla bilgiye google'a chmod cheat sheet yazarak ulaşabilirsiniz.
+
+
+
+awk kullanımı cok genıstır ondan dolayı https://ceaksan.com/tr/awk-komutu boyle bır kaynak bırakıyorum
