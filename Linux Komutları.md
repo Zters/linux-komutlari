@@ -64,6 +64,14 @@ chmod : komutu dosyaların yetkilerini ayarlamaya yarar.
 * +x : Dosyayı çalıştırılabilme iznini verir.
 * -x : Dosyadan çalıştırılabilme iznini kaldırır. NOT: chmod'un nasıl kullanıldığı ile ilgili daha fazla bilgiye google'a chmod cheat sheet yazarak ulaşabilirsiniz.
 
+grep : komutu çıktısını alabildiğin bir komutun içinden belli bir kelime veya cümlenin olduğu satırları almaya/işlemeye yarar.
+
+-v : Belirlenen kelimeyi içeren satırları almamaya yarar
+-E : Birden çok kelime kullanmaya yarar
+-i : Büyük küçük harf kuralını es geçer
+-ne : Satır numaralarını gösterir
+-A(SAYI) : Belirlenen kelimenin altından SAYI kadar satır alır (After)
+-B(SAYI) : Belirlenen kelimenin üstünden SAYI kadar satır alır (Before) Örnek kullanım:
 
 
 awk kullanımı cok genıstır ondan dolayı https://ceaksan.com/tr/awk-komutu boyle bır kaynak bırakıyorum
