@@ -66,12 +66,29 @@ chmod : komutu dosyaların yetkilerini ayarlamaya yarar.
 
 grep : komutu çıktısını alabildiğin bir komutun içinden belli bir kelime veya cümlenin olduğu satırları almaya/işlemeye yarar.
 
--v : Belirlenen kelimeyi içeren satırları almamaya yarar
--E : Birden çok kelime kullanmaya yarar
--i : Büyük küçük harf kuralını es geçer
--ne : Satır numaralarını gösterir
--A(SAYI) : Belirlenen kelimenin altından SAYI kadar satır alır (After)
--B(SAYI) : Belirlenen kelimenin üstünden SAYI kadar satır alır (Before) Örnek kullanım:
+* -v : Belirlenen kelimeyi içeren satırları almamaya yarar
+* -E : Birden çok kelime kullanmaya yarar
+* -i : Büyük küçük harf kuralını es geçer
+* -ne : Satır numaralarını gösterir
+* -A(SAYI) : Belirlenen kelimenin altından SAYI kadar satır alır (After)
+* -B(SAYI) : Belirlenen kelimenin üstünden SAYI kadar satır alır (Before) 
 
+cut: komutu, herhangi bir komutun çıktısındaki değeri kırpmaya yarar. "|" ile birlikte kullanılabilir.
+
+* -d : Ayraç olarak hangi karakterin kullanacağını belirler.
+* -f : Ayracın başından başlayarak seçim yapmaya yarar. En sona "-" eklerseniz satırın sonuna kadar alır.
+
+tr : komutu yine aynı grep, awk, sed gibi bir çıktı ve dosya işleme aracıdır. Özel olarak isteğe göre seçilen biçimleri işleme özelliği vardır.
+
+* -d : Belirli biçim veya karakter ile eşleşen karakterleri siler.
+* -c : Belirli biçim veya karakter ile eşleşmeyen karakterler üzerinde işlem yapar.
+* -s : Belirli biçim veya karakter birden fazla tekrar ediyorsa tekrar sayısını 1'e düşürür. Kendisine ikinci bir parametre verilirse, belirli karakter yerine belirtilen karakteri yerleştirir. 
+
+sed : komutu, belirli çıktılarda herhangi bir kelimeyi veya cümleyi düzeltmeye yarayan komuttur.
+
+-i : Bu parametreyi dosya seçerek kullandığınızda dosyada düzenleme yapar. "|" işleci ile kullandığınızda herhangi bir değişiklik yapmaz. Değişiklik sadece çıktıya yansır.
+/ : sed komutunda ayıraç olarak kullanılır, dilerseniz _ gibi farklı karakterleri kullanabilirsiniz.
+g,1,2 : g ile tüm değerleri, sayılar ile baştan bir kaç değeri değiştirebilirsiniz.
+; : Bu işareti sed içerisinde kullanmak, alt satıra geçmek ile eşdeğerdir
 
 awk kullanımı cok genıstır ondan dolayı https://ceaksan.com/tr/awk-komutu boyle bır kaynak bırakıyorum
